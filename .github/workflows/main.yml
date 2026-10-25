@@ -29,8 +29,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@main
         with:
-            repository: roothide/Dopamine-roothide
-            submodules: recursive
+          repository: ${{ github.repository }}
+          submodules: recursive
 
       - name: Install Procursus
         uses: dhinakg/procursus-action@main
